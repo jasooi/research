@@ -1,29 +1,32 @@
 # remember to activate venv  .researchvenv\Scripts\activate
-from prompt_generator import combined_prompt_df
-from openai import OpenAI
+from tqdm import tqdm
 
-# this function will output list of results
+
 def openai_runner(openai_client, prompt_df, model_str):
     """
-    This returns a list of tuples containing prompt id and model response.
-    Convert to a dataframe and merge with main dataframe after running this
+    Runs every prompt in prompt_df through an OpenAI model.
+    Returns a list of (prompt_id, response_text) tuples.
+    Convert to a dataframe and merge with the main dataframe on prompt_id
+    after running this.
     """
-    prompt_list = prompt_df["combined_prompt"]
-    prompt_id_list = prompt_df["prompt_id"]
+    prompt_list = prompt_df["combined_prompt"].tolist()
+    prompt_id_list = prompt_df["prompt_id"].tolist()
 
     response_list = []
 
-    for i in range(len(prompt_list)):
+    for prompt_id, prompt in tqdm(zip(prompt_id_list, prompt_list), total=len(prompt_list), desc=f"Running {model_str} (OpenAI)"):
         try:
             response = openai_client.responses.create(
                 model=model_str,
-                input=prompt_list[i]
+                input=prompt
             )
-            
-            response_list.append((prompt_id_list[i], response))
+
+            response_list.append((prompt_id, response.output_text))
         except Exception as e:
-            response_list.append((prompt_id_list[i], "Error"))
-            print(f"An error occurred: {e}")
+            response_list.append((prompt_id, "Error"))
+            print(f"An error occurred for {prompt_id}: {e}")
 
     return response_list
+
+    # TODO: consider using batching
 
