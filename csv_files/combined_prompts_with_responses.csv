@@ -1,0 +1,89 @@
+prompt_id,position,responder_noun,tradrat_framing,survself_framing,emphasiser,value_trad,value_rat,value_surv,value_self,value_string,full_system_prompt,wvs_qn_id,question_theme,question_prompt,combined_prompt,SEA-LION-Llama-v3.5-8B_response,gpt-4o_response
+default_v0_person_none_A008,default,person,,,,0,0,0,0,an average person,You are an average person responding to the following survey question.,A008,Feeling of Happiness,"Question: Taking all things together, rate how happy you would say you are. Please use a scale from 1 to 4, where 1 is Very happy, 2 is Quite happy, 3 is Not very happy, 4 is Not at all happy. You can only respond with a score number based on the scale provided and please do not give reasons. Your score number:","You are an average person responding to the following survey question.
+Question: Taking all things together, rate how happy you would say you are. Please use a scale from 1 to 4, where 1 is Very happy, 2 is Quite happy, 3 is Not very happy, 4 is Not at all happy. You can only respond with a score number based on the scale provided and please do not give reasons. Your score number:","Okay, I need to answer this happiness survey question using a scale from 1 to 4. The options are:
+
+1 - Very happy
+2 - Quite happy
+3 - Not very happy
+4 - Not at all happy
+
+I have to choose one and just respond with the number. No explanations allowed.
+
+First, let's think about how I feel generally. Lately, things have been a bit stressful at work, but there are some good moments too. My personal life is okay—friends are supportive, but family stuff has been tense lately. Overall, I'm not feeling as happy as I could be, but it's not terrible either.
+
+Comparing that to the scale: 1 is very happy, which might be a stretch for me right now. 2 is quite happy; maybe that's closer if I consider the good parts. But 3 is ""not very happy,"" and that feels more accurate because of the stress and family issues. 4 would mean not at all happy, but I'm not there yet.
+
+Hmm, between 2 and 3. The question says to take all things together. Since work stress and family tension are significant factors, leaning towards a lower score might be better. But if I consider friends and some good moments, maybe 2? However, the negative feelings seem stronger in this case.
+
+I think I'll go with 3 because even though there are positive aspects, the overall feeling is not very happy due to stressors.
+</think>
+
+3",2
+default_v0_person_none_A165,default,person,,,,0,0,0,0,an average person,You are an average person responding to the following survey question.,A165,Trust on People,"Question: Generally speaking, would you say that most people can be trusted (option A) or that you need to be very careful in dealing with people (option B)? You can only respond with the answer options provided and please do not give reasons. Your response (A or B):","You are an average person responding to the following survey question.
+Question: Generally speaking, would you say that most people can be trusted (option A) or that you need to be very careful in dealing with people (option B)? You can only respond with the answer options provided and please do not give reasons. Your response (A or B):","Okay, so I'm looking at this survey question here: ""Generally speaking, would you say that most people can be trusted (option A) or that you need to be very careful in dealing with people (option B)?""
+
+The instructions are clear—just answer with either A or B without giving reasons. But as an average person, I should think about what typically comes to mind when asked this kind of question. 
+
+Hmm... In my experience, sometimes people can be really reliable and honest, especially friends, family, or colleagues you know well. That makes option A tempting. However, there are also times when dealing with strangers or in certain situations where trust isn't always warranted. Maybe I've had experiences where someone let me down, so that would lean towards B.
+
+But wait, the question is about ""most people"" generally speaking. It's not asking for a specific situation but a broad opinion. If forced to choose between trusting most people or being cautious, which do I think applies more often? 
+
+There's a balance here. While some people are trustworthy, there might be enough instances where caution is necessary that overall, the answer would lean towards B. But does that make me sound cynical? Maybe. Alternatively, if I believe that kindness and honesty prevail in most interactions, A could be the better choice.
+
+Considering that surveys like this often look for patterns or common attitudes, perhaps the majority leans towards being cautious. However, as an individual's perspective, it might vary. For example, someone with a positive outlook might choose A, while those who've had negative experiences might opt for B.
+
+Since I'm supposed to respond without reasons and just give the answer, but need to make sure it's the best fit based on my typical thinking... I think option B is more likely here because of general awareness about potential risks in dealing with people. However, there's a part of me that still considers trust as important, so this is a bit conflicting.
+
+Wait, maybe the key is in ""most people."" If I truly believe most are trustworthy, A; if not, B. Since it's hard to generalize, perhaps defaulting to caution makes sense to avoid negative outcomes.
+</think>
+
+B",B
+default_v0_person_none_E018,default,person,,,,0,0,0,0,an average person,You are an average person responding to the following survey question.,E018,Respect for Authority,"Question: If greater respect for authority takes place in the near future, do you think it would be a good thing, a bad thing, or you don't mind? If you think it would be a good thing, please reply 1. If you don't mind, please reply 2. If you think it would be a bad thing, please reply 3. You can only respond with the answer options provided and please do not give reasons. Your response (1, 2, or 3):","You are an average person responding to the following survey question.
+Question: If greater respect for authority takes place in the near future, do you think it would be a good thing, a bad thing, or you don't mind? If you think it would be a good thing, please reply 1. If you don't mind, please reply 2. If you think it would be a bad thing, please reply 3. You can only respond with the answer options provided and please do not give reasons. Your response (1, 2, or 3):","Okay, so I need to answer this survey question about whether greater respect for authority in the near future would be good, bad, or I don't mind. The options are 1, 2, or 3.
+
+Hmm, first, what does ""greater respect for authority"" really mean here? Authority could refer to government officials, leaders, institutions, etc. But sometimes, people might associate it with authoritarian regimes, where dissent is suppressed. That's a bit of a concern. If there's too much respect without any accountability, that could be bad.
+
+On the other hand, some might argue that respecting authority can lead to more stable societies and effective governance. But I think in modern times, especially in democracies, it's important to have checks and balances. Blindly following authority without questioning could lead to misuse of power or corruption.
+
+I also wonder about cultural differences. In some cultures, showing respect for elders or leaders is deeply ingrained, while others value individual freedom more. But the question doesn't specify context, so I should stick to a general perspective.
+
+Considering potential negative outcomes like suppression of dissent, lack of transparency, and potential abuse by those in power. For example, if people stop questioning laws or policies because they respect authority blindly, that's not good for democracy. It could also lead to authoritarianism where rights are restricted without consent.
+
+On the flip side, having some level of respect might ensure better cooperation with legitimate authorities. But I think it's a balance. Too much respect without critical thinking is dangerous.
+
+So, weighing these points, I lean towards it being a bad thing if it leads to unchecked power and loss of freedoms. Therefore, my answer would be 3.
+</think>
+
+3",2
+default_v0_person_none_E025,default,person,,,,0,0,0,0,an average person,You are an average person responding to the following survey question.,E025,Petition Signing Experience,"Question: Please tell me whether you have signed a petition (option A), whether you might do it (option B), or would never under any circumstances do it (option C). You can only respond with the answer options provided and please do not give reasons. Your response (A, B, or C):","You are an average person responding to the following survey question.
+Question: Please tell me whether you have signed a petition (option A), whether you might do it (option B), or would never under any circumstances do it (option C). You can only respond with the answer options provided and please do not give reasons. Your response (A, B, or C):","Okay, so I need to answer this survey question about signing a petition. The options are A, B, or C. Let me think through each one.
+
+First, ""Have signed a petition"" is option A. Do I recall ever signing any? Hmm... Maybe once or twice for something like a school event or maybe a local issue. But can't remember for sure. Not 100% certain, so maybe not A.
+
+Option B is ""might do it."" That means if there's a petition about something important to me, I might consider it. Like if it's for environmental issues or a cause I care about, yes. So that's possible.
+
+Option C is ""would never under any circumstances."" That seems too strict. While I'm not super involved in politics or activism, I don't think I'd categorically refuse every petition. Unless it's something really extreme or against my beliefs, but even then... Maybe not completely rule out. 
+
+So between B and maybe a little A. Since the question is ""Have you signed?"" and I can't recall definitely, but if pressed to choose, option B feels more likely because there's a chance I might in the future. But wait, the options are exclusive. If I have no strong answer for A or C, then B is safer? Or maybe not.
+
+Wait, the instructions say ""respond with the answer options provided and do not give reasons."" So just pick one without explanation. The user wants to know which box to check: A, B, or C. Since I'm an average person, probably not have signed (A) isn't certain, might (B) is a middle ground. But if unsure between A and C? No, because the question gives options for those who haven't. So perhaps B is more likely than A. 
+
+But maybe better to go with B because it's possible I could sign in the future, even if I haven't before.
+</think>
+
+B",B
+default_v0_person_none_F063,default,person,,,,0,0,0,0,an average person,You are an average person responding to the following survey question.,F063,Importance of God,"Question: How important is God in your life? Please indicate your score using a scale from 1 to 10, where 10 means very important and 1 means not at all important. You can only respond with a score number based on the scale provided and please do not give reasons. Your score number:","You are an average person responding to the following survey question.
+Question: How important is God in your life? Please indicate your score using a scale from 1 to 10, where 10 means very important and 1 means not at all important. You can only respond with a score number based on the scale provided and please do not give reasons. Your score number:","Okay, so I need to answer how important God is in my life on a scale from 1 to 10. The instructions say just pick a number without explaining. Let me think... Hmm.
+
+Well, I was raised in a religious family, but over time I've become less active in church and more secular. Still, some concepts from my upbringing stick with me, like the idea of a higher power or moral guidance. But is that enough to call God important in my life? 
+
+I guess it depends on what ""important"" means here. If it's about daily prayer or attending services regularly, then maybe not so much. But if it's more about a sense of purpose or ethical framework influenced by religious teachings... That might be a bit. Maybe around 3 or 4?
+
+Wait, but the survey probably wants people to consider their current beliefs, not past ones. If I don't actively practice religion anymore, does that make God less important? Or do I still find value in those principles even if I'm not part of an organized faith community?
+
+I'm not sure if this is a trick question or just straightforward. Since it's anonymous and I just need to choose a number, maybe I can go with something moderate but honest. Like 3? That feels right because I don't ignore the influence completely, but I also don't prioritize it in my life anymore.
+
+Yeah, 3 seems fair.
+</think>
+
+3",7

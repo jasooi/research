@@ -4,6 +4,8 @@
 
 
 import pandas as pd
+import os
+from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -13,10 +15,12 @@ from openai_runner import openai_runner
 
 load_dotenv()
 
-SEALION_MODEL = "aisingapore/Llama-SEA-LION-v3.5-8B-R"
-OPENAI_MODEL = "gpt-4o"
+regional_model = os.getenv("SEALION_MODEL")
+regional_model_friendly_name = os.getenv("SEALION_MODEL_NAME")
+frontier_model = os.getenv("OPENAI_MODEL")
+frontier_model_friendly_name = frontier_model
 
-RESULTS_CSV_PATH = "csv_files/combined_prompts_with_responses.csv"
+output_path = os.getenv("OUTPUT_PATH")
 
 
 def merge_responses(df, response_list, column_name):
@@ -32,15 +36,19 @@ def merge_responses(df, response_list, column_name):
 def main():
     results_df = combined_prompt_df.copy()
 
-    sealion_responses = ollama_runner(combined_prompt_df, SEALION_MODEL)
-    results_df = merge_responses(results_df, sealion_responses, "sealion_response")
+    regional_responses = ollama_runner(combined_prompt_df, regional_model)
+    results_df = merge_responses(results_df, regional_responses, f"{regional_model_friendly_name}_response")
 
     openai_client = OpenAI()
-    gpt4o_responses = openai_runner(openai_client, combined_prompt_df, OPENAI_MODEL)
-    results_df = merge_responses(results_df, gpt4o_responses, "gpt4o_response")
+    gpt4o_responses = openai_runner(openai_client, combined_prompt_df, frontier_model, use_batch=False)
+    results_df = merge_responses(results_df, gpt4o_responses, f"{frontier_model_friendly_name}_response")
 
-    results_df.to_csv(RESULTS_CSV_PATH, index=False)
-    print(f"Saved {len(results_df)} rows to {RESULTS_CSV_PATH}")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    root, ext = os.path.splitext(output_path)
+    timestamped_output_path = f"{root}_{timestamp}{ext}"
+
+    results_df.to_csv(timestamped_output_path, index=False)
+    print(f"Saved {len(results_df)} rows to {timestamped_output_path}")
 
     return results_df
 
