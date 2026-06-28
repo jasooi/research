@@ -8,10 +8,8 @@ questions under different value-positioned personas.
 
 ## Methodology
 
-1. **Persona generation** — system prompts are generated that position the
-   responder along the four WVS cultural value dimensions (traditional,
-   secular-rational, survival, self-expression), individually and in
-   combination, with variation in:
+1. **Persona generation** — system prompts are generated with a position along the four WVS cultural value dimensions (traditional,
+   secular-rational, survival, self-expression) plus all permutations, with variation in:
    - framing (identity, e.g. *"a traditional person"*, vs. preference, e.g.
      *"a person who values tradition and faith"*)
    - emphasiser strength (`deeply`, `strongly`, `very`, `greatly`, or none)
@@ -22,7 +20,7 @@ questions under different value-positioned personas.
    - **GPT-4o** (OpenAI API) — general-purpose, global model
    - **SEA-LION v3.5 Llama3.1 8B** (`aisingapore/Llama-SEA-LION-v3.5-8B-R`, via
      Ollama) — Southeast-Asia-focused regional model
-4. Responses are compared across personas and models to assess whether
+4. Responses are compared across system prompts and models to assess whether
    SEA-LION's answers track the cultural values it's meant to represent more
    closely than GPT-4o's do.
 
@@ -91,6 +89,4 @@ generation can't silently misalign with the wrong row. The enriched
 dataframe is saved to `csv_files/combined_prompts_with_responses.csv`.
 
 ## Status / next steps
-
-- [ ] Consider batching for the OpenAI runner (see TODO in `openai_runner.py`)
-- [ ] Add response post-processing/scoring against the WVS value dimensions
+Add response post-processing/scoring against the WVS value dimensions and plotting of the Overton Window.
